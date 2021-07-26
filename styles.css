@@ -9,16 +9,34 @@ body {
     height: 100vh;
 }
 
-#id {
+.quote-box{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2rem;
+    transform: translate(-50%,-50%);
+    padding: 3rem;
     background: rgba(0,0,0, 0.8);
-    font-style: 2rem;
-    border-radius: 10px;
+    font-size: 2rem;
+    border-radius: 20px;
     transition: 0.5s;
     color: aliceblue;
     cursor: pointer;
+}
+
+#author {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#author::before {
+    content: '\275B';
+    margin-right: 7px;
+}
+
+#author::after {
+    content: '\275C';
+    margin-left: 2px;
 }
